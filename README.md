@@ -15,7 +15,9 @@ Output radiomics to new spreadsheet. Append.
 
 to calculate radiomics: send an image and mask np array (256x256) to run_radiomics_on_echo_slice
 
- 
+ PCA:
+ <img width="1475" height="518" alt="image" src="https://github.com/user-attachments/assets/4117cd55-8fd4-4eb6-8a20-1708ee256eb4" />
+
 
 
 <img width="777" height="195" alt="image" src="https://github.com/user-attachments/assets/bfbe1c0a-6417-48d8-add2-100e5d7526ce" />
@@ -27,6 +29,8 @@ view_nii.py:
 This is ouput from extract nii data
 Image size: (256, 256, 3)
 Mask size: (256, 256)
+
+
 
 
 [1]trained on 470 images: 
