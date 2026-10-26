@@ -5,7 +5,7 @@ import matplotlib.pyplot as mlt
 import nibabel as nib
 import SimpleITK as sitk
 
-# data_dir = rf'C:\Users\rlong5\Desktop\Echo\1_Raw Data\CAMUS_public\CAMUS_public\database_nifti\patient0001'
+# data_dir = rf''
 def list_nii_parameter(data_dir):
     '''
     summarizes size of .nii
@@ -30,7 +30,7 @@ def list_nii_parameter(data_dir):
     image = sitk.ReadImage(data_dir)
 
 
-# path_to_image = rf"C:\Users\rlong5\Desktop\Echo\1_Raw Data\20260911_files\0965833\original_image.nii"
+# path_to_image = rf""
 
 
 # list_nii_parameter(path_to_image)
