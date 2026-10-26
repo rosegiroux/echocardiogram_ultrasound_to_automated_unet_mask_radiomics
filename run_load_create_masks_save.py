@@ -18,7 +18,7 @@ import pandas #pandas   2.3.1
 # Mask
 # Output maks
 
-data_directory = rf'C:\Users\rlong5\Desktop\Echo\1_Raw Data\20260911_files\0897724'
+data_directory = rf'dirdir'
 
 #there is two dicoms 
 #column 6 is the path to the file
@@ -28,7 +28,7 @@ data_directory = rf'C:\Users\rlong5\Desktop\Echo\1_Raw Data\20260911_files\08977
 #^start w 4ch
 
 #for each line, go to directory
-file_list_from_excel = pandas.read_excel(rf"C:\Users\rlong5\Desktop\Echo\1_Raw Data\OneDrive_File_Inventory_with_Diagnoses3.xlsm")
+file_list_from_excel = pandas.read_excel(rf"dir")
 print(file_list_from_excel.columns)
     
 for path in file_list_from_excel.iloc[12:13, 5]:
@@ -93,7 +93,7 @@ for path in file_list_from_excel.iloc[12:13, 5]:
     # Copy values only within the bounding box
     mask_id3_bbox[y:y+h, x:x+w] = pred_mask[y:y+h, x:x+w]
 
-    save_nifti(os.path.dirname(path), #rf"C:\Users\rlong5\Desktop\Echo\1_Raw Data\20260911_files\0897724", #folder =
+    save_nifti(os.path.dirname(path), #rf"dir", #folder =
         img_array,
         mask_id3_bbox,
         img_nii_name="original_image",
