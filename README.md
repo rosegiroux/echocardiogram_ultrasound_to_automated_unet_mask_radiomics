@@ -1,14 +1,14 @@
 
-This program takes an echocardiogram, takes first slice, creates mask on custom unet trained on three avaailable datasets [1]
+Do you want to classify disease from an ultrasound? 
 
-1) For each line
-Go to directory
-Get dicom-> array
-Mask
-Output maks
-2) Change env to radiomics
-Send directory to radiomics 
-Output radiomics to new spreadsheet. Append. 
+This program computes a mask based on the left ventricle from a single frame of a apical 4-ch echocardiogram, 
+and computes mathematical parameter calculation, i.e. the radiomics. Then, disease state is predicted with a classifier with over 89 AUC. 
+
+
+in run_create_load, call the mask_utils which uses an unet trained on available data. DICE scores >0.90 
+then 
+Change env to radiomics
+Calculate radiomic and use visualize echo t create principle component analysis. 
 
 <img width="855" height="474" alt="image" src="https://github.com/user-attachments/assets/e77ff25d-999e-4757-abb7-5b913a5d8a5d" />
 <img width="1024" height="620" alt="image" src="https://github.com/user-attachments/assets/97b538a3-41fa-4a7a-8d5e-3cdb6ef6b6ce" />
